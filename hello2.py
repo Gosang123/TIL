@@ -1,4 +1,3 @@
-print("hihi")
 id="i lovepython"
 ps="123456"
 s=input("아이디를 입력하시오:")

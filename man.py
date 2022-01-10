@@ -7,7 +7,7 @@ class Man:
         print("Hello " + self.name +"!")
 
     def goodbye(self):
-        print("Good-bye" + self.name+"!")
+        print("Good-bye " + self.name+"!")
         
 m = Man("David")
 m.hello()
