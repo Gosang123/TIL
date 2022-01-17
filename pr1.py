@@ -1,28 +1,39 @@
-print("체질량 지수 BMI를 확인해 보세요")
+food_icon="""##########################
+            #######################
+             ##################"""
+menu="""
+        -메뉴 -
+    불고기 비빔밥:12000원
+    야채 비빔밥 8000원
+    전주 비빔밥 10000원
+    
+    세트 주문시 3,000원 추가
+    (세트는 밥과 반찬이 추가됩니다.)
+"""
 
-height = float(input("키를 입력하세요(단위: 미터) >>>"))
-weight = float(input ("몸무게를 입력하세요>>> "))
-
-# bmi = 몸무게 / 키 * 키
-bmi = round(weight / height ** 2 ,1)
-bmi_icon="ㅁ"
-#163, 48
-print("*" *20)
-print("BMI 결과")
 
 
-if bmi <18.5:
-    print(bmi_icon)
-    print("저체중입니다.")
 
-elif bmi <25 :
-    print(bmi_icon*2)
-    print("정상입니다.")
-elif bmi < 30:
-    print(bmi_icon*3)
-    print("경도 비만입니다.")
-elif bmi <35:
-    print(bmi_icon*4)
-    print("중도 비만입니다.")
+print(food_icon)
+print("코드덤 비빔밥 전문점에 오신것을 환영합니다.")
+print("*"*50)
+print(menu)
+print("*"*50)
+print()
+order=input("비빔밥의 종류를 선택하세요 예)불고기, 야채, 전주 >>>>")
+combo=input("세트로 주문하시겠습니까? 3,000원 추가. 예) 네, 아니요 >>>")
 
-print("*" *20)
+price=0
+
+if order=='불고기':
+    price=12_000
+elif order=='야채':
+    price=8_000
+else:
+    price=10_000
+
+if combo =="네":
+    price+=3_000
+
+
+print(f"총 금액은 {price}원 입니다.")
