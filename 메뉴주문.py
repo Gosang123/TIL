@@ -15,7 +15,7 @@ menu="""
 
 
 print(food_icon)
-print("코드덤 비빔밥 전문점에 오신것을 환영합니다.")
+print("비빔밥 전문점에 오신것을 환영합니다.")
 print("*"*50)
 print(menu)
 print("*"*50)
