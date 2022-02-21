@@ -30,7 +30,7 @@ def play(x,y):
     global score
 
     if attempt == 12:
-        result(m)
+        result("Game Over")
 
     else:
         click_num+=1
